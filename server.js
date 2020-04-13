@@ -29,8 +29,7 @@ app.set('views', path.join(__dirname, 'views'));
 const url = "https://news.ycombinator.com/";
 
 // If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://fumacarne:qwerty212342467@ds229108.mlab.com:29108/heroku_zd1rhkwg";
-
+var MONGODB_URI = process.env.MONGODB_URI ||  'mongodb://localhost/3030'
 mongoose.connect(MONGODB_URI, {useNewUrlParser: true});
 
 
